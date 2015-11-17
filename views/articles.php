@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+п»ї<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -8,17 +8,17 @@
 	</head>
 	<body>
 		<div class = "container">
-			<h1> Первый блог </h1>
+			<h1> РџРµСЂРІС‹Р№ Р±Р»РѕРі </h1>
 			<div>
 				<?php foreach($articles as $a): ?>
 				<div class = "article"> 
-					<h3> <a href="article.php?id=<?=$a['id']?>"><?=$article['title']?></a> </h3>
-					<em>Опубликовано: <?=$article['date']?></em>
-					<p>Статья1</p>
+					<h3> <a href="article.php?id=<?=$a['id']?>"><?=$a['title']?></a> </h3>
+					<em>РџРѕСЃР»РµРґРЅРµРµ РёР·РјРµРЅРµРЅРёРµ: <?=$a['date']?></em>
+					<p><?=$a['content']?></p>
 				</div>
 				<?php endforeach ?>
 				<footer>
-					<p> <?=$article['content']?></br>
+					<p> РџРµСЂРІС‹Р№ Р±Р»РѕРі</br>
 					Copyright &copy; 2015 </p>
 				</footer>
 			</div>	

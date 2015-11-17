@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+п»ї<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -8,12 +8,12 @@
 	</head>
 	<body>
 		<div class = "container">
-			<h1> Первый блог </h1>
+			<h1> РџРµСЂРІС‹Р№ Р±Р»РѕРі </h1>
 			<div>
 				<div class = "article"> 
 					<h3><?=$article['title']?></h3>
-					<em>Опубликовано: <?=$article['date']?></em>
-					<p>Статья1</p>
+					<em>РћРїСѓР±Р»РёРєРѕРІР°РЅРѕ: <?=$article['date']?></em>
+					<p>РЎС‚Р°С‚СЊСЏ1</p>
 				</div>
 				<footer>
 					<p> <?=$article['content']?></br>

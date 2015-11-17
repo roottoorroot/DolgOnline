@@ -1,10 +1,11 @@
-<?php
-	require_once("database.php"); //áàçà äàííûõ
-	require_once("models/articles.php"); //Ôóíêöèè äëÿ ðàáîòû ñî ñòàòüÿìè â áëîãå 
+ï»¿<?php
+	require_once("database.php"); //Ð±Ð°Ð·Ð° Ð´Ð°Ð½Ð½Ñ‹Ñ…
+	require_once("models/articles.php"); //Ð¤ÑƒÐ½ÐºÑ†Ð¸Ð¸ Ð´Ð»Ñ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ ÑÐ¾ ÑÑ‚Ð°Ñ‚ÑŒÑÐ¼Ð¸ Ð² Ð±Ð»Ð¾Ð³Ðµ 
 	
-	$article = article_get($_GET['id'])
+	$link = db_connect();
+	$article = articles_get($link, $_GET['id']);
 	
-	include("view/article.php");
+	include("views/article.php");
 	
 
 ?>

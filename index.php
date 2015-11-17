@@ -1,18 +1,10 @@
-<?php
-	//echo "Hello world:  ";
-	//echo time();
+﻿<?php
+	require_once("database.php");
+	require_once("models/articles.php");
 	
-	$a = $_GET['a'];
-	$b = $_GET['b'];
-	function add($param1, $param2){
-		return $param1 + $param2;
-	}
+	$link = db_connect();
+	$articles = articles_all($link);
+	include("views/articles.php");
 	
-	for($i = 0; $i < 10; $i++){
-		echo $i."<br>";
-	}
-	
-	
-	echo add($a,$b);
 
 ?>
